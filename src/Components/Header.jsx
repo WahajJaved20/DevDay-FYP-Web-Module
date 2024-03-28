@@ -17,7 +17,7 @@ function Header (){
           </div>
           
         </div>
-        <p className="text-md text-center font-cicularStd font-black relative z-10 lg:ml-[25%] md:ml-[20%] ml-[2%] lg:mr-[20%] md:mr-[15%] mr-[2%]">
+        <p className="text-md text-center font-cicularStd font-black relative z-10 lg:ml-[25%] md:ml-[20%] lg:mr-[20%] md:mr-[15%]">
           Future Unveiled: A Showcase of Innovation invites final year students to unleash their creativity 
           and ingenuity in a dynamic competition resembling an innovation hackathon. As participants unveil 
           their groundbreaking projects before a panel of esteemed judges, the event becomes a nexus of 
