@@ -15,7 +15,6 @@ function PrizesList(){
                     </div>
                 ))
             }
-
         </div>
     )
 }
