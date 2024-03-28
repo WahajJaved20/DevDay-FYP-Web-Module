@@ -8,7 +8,7 @@ function Header (){
           <img
             src={rocketLaunch} // Replace with your image path
             alt="Innovation Showcase Rocket"
-            className="object-cover w-64 h-64 opacity-100 z-0 relative"
+            className="object-cover lg:w-64 md:w-56 w-48 lg:h-64 md:h-56 h-48 opacity-100 z-0 relative"
           />
           <div className='flex flex-col ml-[-120px]'>
           <h1 className="text-[60px] font-black font-Gotham text-center lg:mt-16 md:mt-8 mt-4">FUTURE UNVEILED</h1>
@@ -17,7 +17,7 @@ function Header (){
           </div>
           
         </div>
-        <p className="text-md text-center font-cicularStd font-black relative z-10 lg:ml-[25%] md:ml-[20%] ml-[10%] lg:mr-[20%] md:mr-[15%] mr-[10%]">
+        <p className="text-md text-center font-cicularStd font-black relative z-10 lg:ml-[25%] md:ml-[20%] ml-[2%] lg:mr-[20%] md:mr-[15%] mr-[2%]">
           Future Unveiled: A Showcase of Innovation invites final year students to unleash their creativity 
           and ingenuity in a dynamic competition resembling an innovation hackathon. As participants unveil 
           their groundbreaking projects before a panel of esteemed judges, the event becomes a nexus of 
