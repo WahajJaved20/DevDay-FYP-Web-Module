@@ -11,3 +11,9 @@ html{
   src: local("Gotham-Bold"),
     url("./Fonts/Gotham-Bold.otf") format("truetype");
 }
+
+@font-face {
+  font-family: "CircularStd";
+  src: local("CircularStd-Black"),
+    url("./Fonts/CircularStd-Black.otf") format("truetype");
+}

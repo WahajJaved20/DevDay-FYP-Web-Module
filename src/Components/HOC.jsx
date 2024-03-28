@@ -1,11 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const HOC = (WrappedComponent) => {
-    return(
-        <div className="m-4">
-            <WrappedComponent />
-        </div>
-    );
-}
+    return (props) => {
+        return <div style={{ margin: '16px' }}><WrappedComponent {...props} /></div>;
+    };
+};
 
 export default HOC;

@@ -9,9 +9,15 @@ export default {
     extend: {
       backgroundColor: {
         'primaryColor': '#9BD7E6',
+        'headerButton': "#003149"
+      },
+      textColor: {
+        'primaryColor': '#000000',
+        'secondaryColor': '#088097',
       },
       fontFamily: {
         Gotham: ['Gotham', 'sans-serif'],
+        circularStd: ['CircularStd', 'sans-serif'],
       },
     },
   },
