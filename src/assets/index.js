@@ -4,12 +4,17 @@ import firstPrize from './firstPrize.png';
 import secondPrize from './secondPrize.png';
 import thirdPrize from './thirdPrize.png';
 import teamwork from './teamWork.png';
+import timelineCircleOne from './timelineCircleOne.svg';
+import timelineCircleTwo from './timelineCircleTwo.svg';
+import timelineCircleThree from './timelineCircleThree.svg';
 export {
     acmLogo,
     rocketLaunch,
     firstPrize,
     secondPrize,
     thirdPrize,
-    teamwork
-
+    teamwork,
+    timelineCircleOne,
+    timelineCircleTwo,
+    timelineCircleThree
 }

@@ -11,7 +11,7 @@ function Header (){
             className="object-cover lg:w-64 md:w-56 w-36 lg:h-64 md:h-56 h-36 opacity-100 z-0 relative"
           />
           <div className='flex flex-col ml-[-120px]'>
-          <h1 className="text-[60px] font-black font-Gotham text-center lg:mt-16 md:mt-8 mt-4">FUTURE UNVEILED</h1>
+          <h1 className="text-[60px] text-primaryColor font-Gotham text-center lg:mt-16 md:mt-8 mt-4">FUTURE UNVEILED</h1>
           <p className="text-[30px] font-Gotham font-bold text-secondaryColor text-center">A SHOWCASE OF INNOVATION</p>
           
           </div>

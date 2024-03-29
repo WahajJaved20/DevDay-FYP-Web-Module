@@ -9,13 +9,15 @@ export default {
     extend: {
       backgroundColor: {
         'primaryColor': '#9BD7E6',
-        'headerButton': "#003149"
+        'headerButton': "#003149",
+        'dashColor': "#C8C8C8"
       },
       textColor: {
         'primaryColor': '#000000',
         'secondaryColor': '#088097',
         'innovationColor':"#9B9ADC",
-        'subInnovation': '#003149'
+        'subInnovation': '#003149',
+        "dateColor": "#7A7A7A"
       },
       fontFamily: {
         Gotham: ['Gotham', 'sans-serif'],
@@ -24,6 +26,7 @@ export default {
     },
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require("daisyui")
   ]
 }
