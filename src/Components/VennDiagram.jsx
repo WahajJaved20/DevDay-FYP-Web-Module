@@ -7,7 +7,7 @@ function vennDiagramComponent(){
     return (
         <>
             <img src={vennDiagram} alt="Venn Diagram" />
-            <div className="w-full bg-dashColor ml-4 mr-4 text-[1px]">-</div>
+            <div className="w-full bg-dashColor ml-4 mr-4 text-[1px] mt-16">-</div>
         </>
     );
 }

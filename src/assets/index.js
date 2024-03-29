@@ -8,6 +8,9 @@ import timelineCircleOne from './timelineCircleOne.svg';
 import timelineCircleTwo from './timelineCircleTwo.svg';
 import timelineCircleThree from './timelineCircleThree.svg';
 import vennDiagram from './vennDiagram.svg';
+import abstractIcon from './abstractIcon.svg';
+import uniquenessIcon from './uniquenessIcon.svg';
+import featuresIcon from './featuresIcon.svg';
 export {
     acmLogo,
     rocketLaunch,
@@ -18,5 +21,8 @@ export {
     timelineCircleOne,
     timelineCircleTwo,
     timelineCircleThree,
-    vennDiagram
+    vennDiagram,
+    abstractIcon,
+    uniquenessIcon,
+    featuresIcon
 }
