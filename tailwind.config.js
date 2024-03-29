@@ -14,6 +14,8 @@ export default {
       textColor: {
         'primaryColor': '#000000',
         'secondaryColor': '#088097',
+        'innovationColor':"#9B9ADC",
+        'subInnovation': '#003149'
       },
       fontFamily: {
         Gotham: ['Gotham', 'sans-serif'],

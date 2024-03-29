@@ -14,6 +14,6 @@ html{
 
 @font-face {
   font-family: "CircularStd";
-  src: local("CircularStd-Black"),
-    url("./Fonts/CircularStd-Black.otf") format("truetype");
+  src: local("CircularStd-Medium"),
+    url("./Fonts/CircularStd-Medium.otf") format("truetype");
 }

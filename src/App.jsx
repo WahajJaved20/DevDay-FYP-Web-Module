@@ -3,6 +3,7 @@ import './App.css'
 import  Navbar  from './Components/Navbar';
 import HOCHeader from './Components/Header';
 import HOCPrizes from './Components/Prizes';
+import HOCCallout from './Components/Callout';
 function App() {
 
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <HOCHeader />
       <HOCPrizes />
+      <HOCCallout />
     </>
   )
 }
