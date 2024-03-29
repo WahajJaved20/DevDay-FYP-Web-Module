@@ -95,7 +95,7 @@ function Timeline() {
                 </li>
                 <li class="relative mb-6 sm:mb-0">
                     <div class="hidden sm:flex mt-3 sm:pe-8 flex flex-col justify-center">
-                        <p class="text-base font-circularStd text-black mr-[50%] mb-4">
+                        <p class="text-base font-circularStd text-black mr-[30%] mb-4">
                         Award the best of them. Meet us on 25th April.</p>
                     </div>
                     <div class="flex items-center">
@@ -106,7 +106,7 @@ function Timeline() {
                         <div className="font-bold bg-dashColor h-2 w-8 mb-4"></div>
                         <h1 class="block mb-2 text-sm font-circularStd leading-none text-dateColor">April-2024</h1>
                         <div class="sm:hidden sm:flex mt-3 sm:pe-8 flex flex-col justify-center">
-                            <p class="text-base font-circularStd text-black mr-[50%] mb-4">
+                            <p class="text-base font-circularStd text-black mr-[30%] mb-4">
                                 Award the best of them. Meet us on 25th April</p>
                         </div>
                     </div>
