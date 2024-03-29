@@ -5,6 +5,7 @@ import HOCHeader from './Components/Header';
 import HOCPrizes from './Components/Prizes';
 import HOCCallout from './Components/Callout';
 import HOCTimeline from './Components/Timeline';
+import HOCVennDiagram from './Components/VennDiagram';
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
       <HOCPrizes />
       <HOCCallout />
       <HOCTimeline />
+      <HOCVennDiagram />
     </>
   )
 }

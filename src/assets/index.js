@@ -7,6 +7,7 @@ import teamwork from './teamWork.png';
 import timelineCircleOne from './timelineCircleOne.svg';
 import timelineCircleTwo from './timelineCircleTwo.svg';
 import timelineCircleThree from './timelineCircleThree.svg';
+import vennDiagram from './vennDiagram.svg';
 export {
     acmLogo,
     rocketLaunch,
@@ -16,5 +17,6 @@ export {
     teamwork,
     timelineCircleOne,
     timelineCircleTwo,
-    timelineCircleThree
+    timelineCircleThree,
+    vennDiagram
 }
