@@ -13,7 +13,7 @@ function Callout() {
           />
           <div className='flex flex-col ml-4'>
           <h1 className="lg:text-[60px] md:text-[50px] text-[40px] text-innovationColor font-Gotham mt-4">Innovation</h1>
-          <p className="lg:text-[30px] text-20px font-Gotham font-bold text-subInnovation">has multiple roots!</p>
+          <p className="text-[30px] font-Gotham font-bold text-subInnovation">has multiple roots!</p>
           <p className="text-md font-circularStd text-black text-left md:mr-[15%]">
             Your proposed product or solution may draw inspiration from various sources, 
             including social impact, industry challenges, governmental operations, or educational 
