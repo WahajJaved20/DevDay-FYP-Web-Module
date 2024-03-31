@@ -1,9 +1,9 @@
 import React from 'react';
 import { rocketLaunch } from '../assets';
 import HOC from './HOC';
-function Header (){
+function Header ({scrollToTeamSection}){
     return (
-        <div className=''>
+        <div className='' >
         <div className='flex flex-row mx-auto justify-center relative'>
           <img
             src={rocketLaunch} // Replace with your image path
@@ -26,7 +26,8 @@ function Header (){
           display of forward-thinking solutions poised to shape the future.
           </p>
           <div className="flex justify-center mt-10">
-            <button className="bg-headerButton font-Gotham text-white hover:bg-gray-200 py-2 px-4 rounded-full shadow-md">
+            <button onClick={scrollToTeamSection}
+            className="bg-headerButton font-Gotham text-white hover:bg-gray-200 py-2 px-4 rounded-full shadow-md">
               Register Now!
             </button>
           </div>

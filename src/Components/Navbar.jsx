@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { acmLogo } from '../assets';
+import { acmLogo,devday } from '../assets';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleNavbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
 <nav>
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <img src={acmLogo} alt="Flowbite Logo" />
+        <img src={devday} alt="Flowbite Logo" className='w-24 h-24'/>
     <button onClick={toggleNavbar} data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -21,17 +21,17 @@ const Navbar = () => {
           <a href="#" class="block py-2 px-3 text-black rounded md:bg-transparent  md:p-0 dark:text-white" >Home</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0 ">About Us</a>
+          <a href="https://www.acmdevday.com/about" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0 ">About Us</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-black rounded md:border-0 md:p-0 ">Register</a>
+          <a href="https://www.acmdevday.com" target='_blank' class="block py-2 px-3 text-black rounded md:border-0 md:p-0 ">Register</a>
         </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0">Future Unvieled</a>
-        </li>
-        <li>
+        {/* <li>
+          <a href="#" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0">Future Unveiled</a>
+        </li> */}
+        {/* <li>
           <a href="#" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0">Competitions Map</a>
-        </li>
+        </li> */}
       </ul>
     </div>
   </div>

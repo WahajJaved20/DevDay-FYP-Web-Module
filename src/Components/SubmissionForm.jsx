@@ -27,7 +27,7 @@ import { abstractIcon, uniquenessIcon, featuresIcon } from "../assets";
         teamName: '',
     }
 ]
-  function TeamSection() {
+  function TeamSection({reference}) {
     const [formData, setFormData] = React.useState(formContent);
     const teamMembers = [
       {
@@ -89,7 +89,7 @@ import { abstractIcon, uniquenessIcon, featuresIcon } from "../assets";
     }
     }
     return (
-    <div className="flex flex-col">
+    <div className="flex flex-col" ref={reference}>
       <div className="justify-center flex flex-col px-8">
         <h1 className="font-Gotham text-2xl text-black font-bold mb-2 mr-8">TEAM NAME: </h1>
         <input

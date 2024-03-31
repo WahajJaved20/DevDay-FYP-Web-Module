@@ -11,6 +11,7 @@ import vennDiagram from './vennDiagram.svg';
 import abstractIcon from './abstractIcon.svg';
 import uniquenessIcon from './uniquenessIcon.svg';
 import featuresIcon from './featuresIcon.svg';
+import devday from "./ddLogo.png"
 export {
     acmLogo,
     rocketLaunch,
@@ -24,5 +25,6 @@ export {
     vennDiagram,
     abstractIcon,
     uniquenessIcon,
-    featuresIcon
+    featuresIcon,
+    devday
 }
