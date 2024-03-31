@@ -24,6 +24,7 @@ import { abstractIcon, uniquenessIcon, featuresIcon } from "../assets";
         abstract: "",
         uniqueness: '',
         features: '',
+        teamName: '',
     }
 ]
   function TeamSection() {
@@ -49,9 +50,68 @@ import { abstractIcon, uniquenessIcon, featuresIcon } from "../assets";
       },
       
     ];
-  
+    async function handleSubmit() {
+      let submissionFormData = {}
+      submissionFormData['Team_Name'] = formData[3].teamName;
+      submissionFormData['Leader_name'] = formData[0].name;
+      submissionFormData['Leader_email'] = formData[0].email;
+      submissionFormData['Leader_whatsapp_number'] = formData[0].whatsapp;
+      submissionFormData['mem1_name'] = formData[1].name;
+      submissionFormData['mem1_email'] = formData[1].email;
+      submissionFormData['mem1_whatsapp_number'] = formData[1].whatsapp;
+      submissionFormData['mem2_name'] = formData[2].name;
+      submissionFormData['mem2_email'] = formData[2].email;
+      submissionFormData['mem2_whatsapp_number'] = formData[2].whatsapp;
+      submissionFormData['abstract'] = formData[3].abstract;
+      submissionFormData['uniqueness'] = formData[3].uniqueness;
+      submissionFormData['features'] = formData[3].features;
+      submissionFormData["fees_amount"] = 1000;
+      submissionFormData["category"] = "FYP";
+      submissionFormData["paid"] = false;
+      submissionFormData["reference_code"] = "null";
+      try{
+        await fetch('https://api.acmdevday.com/addFYPRegistration', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(submissionFormData),
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+      }catch(e){
+      console.log(e);
+    }
+    }
     return (
     <div className="flex flex-col">
+      <div className="justify-center flex flex-col px-8">
+        <h1 className="font-Gotham text-2xl text-black font-bold mb-2 mr-8">TEAM NAME: </h1>
+        <input
+              value={formData[3].teamName}
+              onChange={(e) => {
+                  const newFormData = [...formData];
+                  newFormData[3].teamName = e.target.value;
+                  setFormData(newFormData);
+              }
+              }
+              type="text"
+              style={{
+                  padding: '0px',
+                  border: 'none',
+                  borderBottom: '2px solid black',
+                  backgroundColor:"transparent",
+                  outline: 'none',
+                  fontSize: '24px',
+              }}
+              className="font-Gotham"
+              />
+      </div>
       <div className="grid grid-cols-1 border-none md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
         {teamMembers.map((member, index) => (
           <div className="flex flex-col py-8 px-4">
@@ -173,7 +233,8 @@ import { abstractIcon, uniquenessIcon, featuresIcon } from "../assets";
          
         </div>
         <div>
-        <button style={{
+        <button onClick={handleSubmit} disabled={formData.some((data) => Object.values(data).some((value) => value === ''))}
+        style={{
             boxShadow: '8px 8px 0px rgba(0, 0, 0, 1)',
         }}
         className="bg-white text-black font-Gotham lg:text-2xl text-md mt-8 p-2 w-32 lg:ml-[80%]">SUBMIT</button>
