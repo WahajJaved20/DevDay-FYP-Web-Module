@@ -187,7 +187,8 @@ import { abstractIcon, uniquenessIcon, featuresIcon } from "../assets";
                     <div className="flex flex-col mt-8 w-full ">
                         <h1 className="text-primaryColor font-Gotham text-2xl"> PROJECT ABSTRACT </h1>
                         <p className="font-circularStd max-w-full">[1] Outline the brief summary of your Project.</p>
-                <textarea value={formData[3].abstract} onChange={(e) => {
+                <textarea value={formData[3].abstract} maxLength={70}
+                onChange={(e) => {
                     const newFormData = [...formData];
                     newFormData[3].abstract = e.target.value;
                     setFormData(newFormData);
@@ -203,7 +204,8 @@ import { abstractIcon, uniquenessIcon, featuresIcon } from "../assets";
                     <div className="flex flex-col mt-8 w-full">
                         <h1 className="text-primaryColor font-Gotham text-2xl"> UNIQUENESS </h1>
                         <p className="font-circularStd max-w-full">[2] What makes your project unique or Standout - the WOW Factor.</p>
-                <textarea value={formData[3].uniqueness} onChange={(e) => {
+                <textarea value={formData[3].uniqueness} maxLength={70}
+                onChange={(e) => {
                     const newFormData = [...formData];
                     newFormData[3].uniqueness = e.target.value;
                     setFormData(newFormData);
@@ -219,7 +221,8 @@ import { abstractIcon, uniquenessIcon, featuresIcon } from "../assets";
                     <div className="flex flex-col mt-8 w-full">
                         <h1 className="text-primaryColor font-Gotham text-2xl"> FEATURES AND FUNCTIONALITY </h1>
                         <p className="font-circularStd max-w-full">[3] What are the main features that drive your project and functionalities that fulfill its' purpose.</p>
-                <textarea value={formData[3].features} onChange={(e) => {
+                <textarea value={formData[3].features} maxLength={70} 
+                onChange={(e) => {
                     const newFormData = [...formData];
                     newFormData[3].features = e.target.value;
                     setFormData(newFormData);
