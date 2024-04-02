@@ -7,6 +7,7 @@ import HOCCallout from './Components/Callout';
 import HOCTimeline from './Components/Timeline';
 import HOCVennDiagram from './Components/VennDiagram';
 import HOCTeamSection from './Components/SubmissionForm';
+import { Analytics } from "@vercel/analytics/react"
 function App() {
   const teamSectionRef = useRef(null);
 
@@ -15,6 +16,7 @@ function App() {
   };
   return (
     <>
+      <Analytics />
       <Navbar />
       <HOCHeader scrollToTeamSection={scrollToTeamSection}/>
       <HOCPrizes />
