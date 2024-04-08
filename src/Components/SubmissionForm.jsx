@@ -147,12 +147,16 @@ function UploadCloudIcon(props) {
       submissionFormData["category"] = "FYP";
       submissionFormData["paid"] = false;
       submissionFormData["reference_code"] = "null";
-      submissionFormData["payment_receipt"] = files;
       if (files === null) {
         alert('Please upload a payment receipt')
         return
     }
       try{
+        const reader = new FileReader()
+            reader.readAsDataURL(files)
+            reader.onload = async () => {
+                const base64Image = reader.result
+                submissionFormData["payment_receipt"] = base64Image
         await fetch('https://api.acmdevday.com/addFYPRegistration', {
           method: 'POST',
           headers: {
@@ -163,10 +167,12 @@ function UploadCloudIcon(props) {
         .then(response => response.json())
         .then(data => {
           console.log('Success:', data);
+          return true;
         })
         .catch((error) => {
           console.error('Error:', error);
         });
+      }
       }catch(e){
       console.log(e);
     }
@@ -404,9 +410,12 @@ function UploadCloudIcon(props) {
                 </Card>
         <div>
         <button onClick={()=>{
-            handleSubmit();
+            if(handleSubmit()== true){
             alert("Registration Successful")
             window.location.reload();
+            }else{
+            alert("Registration Unsuccessful. Please try again later.")
+            }
         }} 
         style={{
             boxShadow: '8px 8px 0px rgba(0, 0, 0, 1)',
