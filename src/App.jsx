@@ -19,7 +19,7 @@ function App() {
       <Analytics />
       <Navbar />
       <HOCHeader scrollToTeamSection={scrollToTeamSection}/>
-      <HOCPrizes />
+      {/* <HOCPrizes /> */}
       <HOCCallout />
       <HOCTimeline />
       <HOCVennDiagram />

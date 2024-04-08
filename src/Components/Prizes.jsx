@@ -3,8 +3,8 @@ import HOC from "./HOC";
 import { firstPrize, secondPrize, thirdPrize } from "../assets";
 
 function PrizesList(){
-    const names = ["Winner", "1st Runner Up", "2nd Runner Up"]
-    const images = {"Winner": firstPrize, "1st Runner Up": secondPrize, "2nd Runner Up": thirdPrize}
+    const names = ["Winner", "1st Runner Up"]
+    const images = {"Winner": firstPrize, "1st Runner Up": secondPrize}
     return (
         <div className="flex lg:flex-row md:flex-row flex-col lg:m-16 md:m-8 m-4 justify-center">
             {

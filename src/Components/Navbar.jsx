@@ -18,20 +18,20 @@ const Navbar = () => {
     <div class={`${!isOpen ? "hidden " : " "} bg-transparent w-full md:block md:w-auto`} id="navbar-default">
       <ul class="font-Gotham text-lg flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
         <li>
-          <a href="#" class="block py-2 px-3 text-black rounded md:bg-transparent  md:p-0 dark:text-white" >Home</a>
+          <a href="https://www.acmdevday.com" class="block py-2 px-3 text-black rounded md:bg-transparent  md:p-0  hover:text-white" >Home</a>
         </li>
         <li>
-          <a href="https://www.acmdevday.com/about" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0 ">About Us</a>
+          <a href="https://www.acmdevday.com/about" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0  hover:text-white">About Us</a>
         </li>
         <li>
-          <a href="https://www.acmdevday.com" target='_blank' class="block py-2 px-3 text-black rounded md:border-0 md:p-0 ">Register</a>
+          <a href="https://www.acmdevday.com/register" target='_blank' class="block py-2 px-3 text-black rounded md:border-0 md:p-0  hover:text-white">Register</a>
         </li>
-        {/* <li>
-          <a href="#" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0">Future Unveiled</a>
-        </li> */}
-        {/* <li>
-          <a href="#" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0">Competitions Map</a>
-        </li> */}
+        <li>
+          <a href="https://fypxtreme.acmdevday.com" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0  hover:text-white">FYP Xtreme</a>
+        </li>
+        <li>
+          <a href="https://chatbot.acmdevday.com" target="_blank" class="block py-2 px-3 text-black rounded  md:border-0 md:p-0  hover:text-white">Chatbot</a>
+        </li>
       </ul>
     </div>
   </div>
