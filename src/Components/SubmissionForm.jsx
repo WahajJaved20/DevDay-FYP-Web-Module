@@ -294,7 +294,7 @@ function UploadCloudIcon(props) {
       <div className="mt-16">
               <div className="flex flex-col">
                 <div className="flex flex-row">
-                    <img src={abstractIcon} alt="abstractIcon" className="h-32 w-32" />
+                    <img src={abstractIcon} alt="abstractIcon" className="h-32 w-32 hidden lg:block" />
                     <div className="flex flex-col mt-8 w-full ">
                         <h1 className="text-primaryColor font-Gotham text-2xl"> PROJECT ABSTRACT </h1>
                         <p className="font-circularStd max-w-full">[1] Outline the brief summary of your Project.</p>
@@ -311,7 +311,7 @@ function UploadCloudIcon(props) {
               </div>
               <div className="flex flex-col">
                 <div className="flex flex-row">
-                    <img src={uniquenessIcon} alt="abstractIcon" className="h-32 w-32" />
+                    <img src={uniquenessIcon} alt="abstractIcon" className="h-32 w-32 hidden lg:block" />
                     <div className="flex flex-col mt-8 w-full">
                         <h1 className="text-primaryColor font-Gotham text-2xl"> UNIQUENESS </h1>
                         <p className="font-circularStd max-w-full">[2] What makes your project unique or Standout - the WOW Factor.</p>
@@ -328,7 +328,7 @@ function UploadCloudIcon(props) {
               </div>
               <div className="flex flex-col">
                 <div className="flex flex-row">
-                    <img src={featuresIcon} alt="abstractIcon" className="h-32 w-32 sm:ml-[-10px] ml-[-32px]" />
+                    <img src={featuresIcon} alt="abstractIcon" className="h-32 w-32 sm:ml-[-10px] ml-[-32px] hidden lg:block" />
                     <div className="flex flex-col mt-8 w-full">
                         <h1 className="text-primaryColor font-Gotham text-2xl"> FEATURES AND FUNCTIONALITY </h1>
                         <p className="font-circularStd max-w-full">[3] What are the main features that drive your project and functionalities that fulfill its' purpose.</p>
