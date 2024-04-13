@@ -157,6 +157,7 @@ function UploadCloudIcon(props) {
             reader.onload = async () => {
                 const base64Image = reader.result
                 submissionFormData["payment_receipt"] = base64Image
+                console.log("Sending lol");
         await fetch('https://api.acmdevday.com/addFYPRegistration', {
           method: 'POST',
           headers: {
@@ -167,6 +168,7 @@ function UploadCloudIcon(props) {
         .then(response => response.json())
         .then(data => {
           console.log('Success:', data);
+            window.location.reload();
           return true;
         })
         .catch((error) => {
@@ -176,6 +178,7 @@ function UploadCloudIcon(props) {
       }catch(e){
       console.log(e);
     }
+    console.log("karak")
     }
     return (
     <div className="flex flex-col" ref={reference}>
@@ -412,7 +415,7 @@ function UploadCloudIcon(props) {
         <button onClick={()=>{
             if(handleSubmit()){
             alert("Registration Successful")
-            window.location.reload();
+            // window.location.reload();
             }else{
             alert("Registration Unsuccessful. Please try again later.")
             }
