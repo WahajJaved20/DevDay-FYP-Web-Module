@@ -412,7 +412,7 @@ function UploadCloudIcon(props) {
                     </CardContent>
                 </Card>
         <div>
-        <button onClick={()=>{
+        <button disabled={true} onClick={()=>{
             if(handleSubmit()){
             alert("Registration Successful")
             // window.location.reload();
