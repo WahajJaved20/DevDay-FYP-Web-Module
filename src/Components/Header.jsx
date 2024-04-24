@@ -4,6 +4,12 @@ import HOC from './HOC';
 function Header ({scrollToTeamSection}){
     return (
         <div className='' >
+            <div className="mx-4">
+                    <div className='rounded-4xl w-full bg-white p-3 text-black font-Gotham border-4 border-black flex'>
+                    <div className='text-black mr-6'>Note:</div>
+                    Registrations for E-OCEAN DEVELOPERS' DAY 2024 are now closed. Stay tuned for more updates!
+    </div>
+    </div>
         <div className='flex flex-row mx-auto justify-center relative'>
           <img
             src={rocketLaunch} // Replace with your image path
